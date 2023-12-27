@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Anniversary!</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body onload="load();" background="background.jpg">
+    <center>
+        <div class="heading">
+            <h2 style="margin-bottom: 60px; width: 100%; background-color: rgba(246, 255, 0, 0.498);">Happy Anniversary!</h2>
+            <button id="ins" data-toggle="modal" data-target="#myModal" style="display: none; background-color: rgba(255, 47, 47, 0.406);"><b style="width: 100%;">Instructions</b></button>
+        </div>
+        <div style="margin-top: 200px;">
+        <img onclick="reveal1();" id="envolep" src="envolep-closed.jpg" style="left: 307px; top: 200px; height: 150px; width: 300px;">
+        <img id="envolep_open" src="envolep-opened.png" style="left: 307px; top: 200px; height: 150px; width: 300px;">
+        <img onclick="reveal2();" id="envolep2" src="envolep-closed.jpg" style="left: 307px; width: 300px; height: 150px;">
+        <img id="envolep_open2" src="envolep-opened.png" style="left: 307px; top: 200px; height: 150px; width: 300px;">
+        <img onclick="reveal3();" id="envolep3" src="envolep-closed.jpg" style="left: 307px; width: 300px; height: 150px;">
+        <img id="envolep_open3" src="envolep-opened.png" style="left: 307px; top: 200px; height: 150px; width: 300px;">
+        </div>
+
+
+        <div id="myModal" class="modal fade">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <a onclick="close()"><button class="close" data-dismiss="modal">&times;</button></a>
+                  <h4>Letter</h4>
+                  </div>
+                  <div class="modal-body">
+                    <img id="msg1" style="height: 500px" width="300px" src="msg1.webp">
+                    <img id="msg2" style="height: 500px" width="300px" src="msg2.webp">
+                    <img id="msg3" style="height: 500px" width="300px" src="msg3.webp">
+                  </div>
+                  </div>
+                  </div>
+                  </div>
+    </center>
+</body>
+<script src="main.js"></script>
+</html>
